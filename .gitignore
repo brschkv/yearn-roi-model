@@ -1,0 +1,12 @@
+# Local Dev stuff
+.idea
+lab/.ipynb_checkpoints
+lab
+
+# Env Files
+.env
+!.env.example
+
+# Credentials
+model/credentials/*
+!model/credentials/.gitkeep
