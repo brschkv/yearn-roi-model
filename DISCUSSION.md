@@ -11,7 +11,8 @@ Since the environment of DeFi and yearn Vaults is a highly dynamic one there are
 each Vault based on the last (7, 30, 90, 365) days.
 
 The price developments are then projected hourly into the future on a linear basis.
-For each Vault and each "based on"-period the model runs 10,000 simulations and calculates HPD intervals
+For each Vault and each "based on"-period the model runs 10,000 simulations and calculates
+ Highest Probability Density (HPD) intervals
 from the results. For better readability and display in the frontend the simulation results 
 are then resampled to a daily time series.
 
