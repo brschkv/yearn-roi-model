@@ -12,11 +12,11 @@ each Vault based on the last (7, 30, 90, 365) days.
 
 The price developments are then projected hourly into the future on a linear basis.
 For each Vault and each "based on"-period the model runs 10,000 simulations and calculates
- Highest Probability Density (HPD) intervals
+ Highest Posterior Density (HPD) intervals
 from the results. For better readability and display in the frontend the simulation results 
 are then resampled to a daily time series.
 
-The model is updated nightly where the prices for the last day are pulled. The the simulations of the future
+The model is updated nightly where the prices for the last day are pulled. Then the simulations of the future
 based on the new informations are done and updated in the webapp database.
  
 Find the complete process [here](model/job/tasks/create_model.py)
